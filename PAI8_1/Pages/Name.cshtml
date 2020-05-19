@@ -1,0 +1,20 @@
+﻿@page
+@model PAI8_1.Pages.NameModel
+@{
+    ViewData["Title"] = "Name";
+
+    var name = "Robert Paulson";
+    var preList = new List<string>() { };
+}
+
+@for(var i  = 0; i < 10; i++)
+{
+    preList.Add("His name is " + name);
+}
+
+<h1>Name</h1>
+@foreach(var st in preList)
+{
+    <div>@st</div>
+}
+
